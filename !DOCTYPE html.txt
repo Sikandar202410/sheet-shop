@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Delights - Order Online</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f3e9;
+            color: #3d3d3d;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3 {
+            color: #5a4035;
+        }
+
+        a {
+            color: #5a4035;
+            text-decoration: none;
+        }
+
+        /* Header */
+        header {
+            background-color: #b69b89;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        /* Menu section */
+        .menu-section {
+            background-color: #f2ede3;
+            padding: 40px 20px;
+        }
+
+        .menu-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .menu-item {
+            background-color: #fff;
+            width: 280px;
+            margin: 15px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .menu-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .menu-item h3 {
+            margin: 10px 0;
+        }
+
+        .menu-item p {
+            font-size: 0.9em;
+        }
+
+        /* Order section */
+        .order-section {
+            background-color: #e1d4c6;
+            padding: 40px 20px;
+        }
+
+        .order-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .order-form {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .order-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .order-form input,
+        .order-form select,
+        .order-form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .order-form button {
+            background-color: #b69b89;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #3d3d3d;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        footer a {
+            color: #f2ede3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Sweet Delights</h1>
+        <p>Your one-stop shop for the most delicious treats in town!</p>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu-section">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/280x180" alt="Sweet Item 1">
+                <h3>Chocolate Fudge</h3>
+                <p>A rich and creamy chocolate delight made with the finest ingredients.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/280x180" alt="Sweet Item 2">
+                <h3>Classic Cheesecake</h3>
+                <p>Indulge in a smooth and creamy cheesecake with a graham cracker crust.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/280x180" alt="Sweet Item 3">
+                <h3>Macarons</h3>
+                <p>Light and airy macarons in a variety of flavors and colors.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section class="order-section">
+        <h2>Place an Order</h2>
+        <div class="order-form">
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="item">Select an Item:</label>
+                <select id="item" name="item" required>
+                    <option value="chocolate_fudge">Chocolate Fudge</option>
+                    <option value="classic_cheesecake">Classic Cheesecake</option>
+                    <option value="macarons">Macarons</option>
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact us: <a href="mailto:sweetdelights@example.com">sweetdelights@example.com</a> | Call: 123-456-7890</p>
+        <p>&copy; 2024 Sweet Delights. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
